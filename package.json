@@ -8,7 +8,8 @@
     "build:css": "set NODE_ENV=production ./node_modules/tailwindcss/lib/cli.js -i ./themes/digitalgarden/assets/css/tailwind.css -o ./static/css/main.css --minify",
     "develop": "concurrently  \"npm run dev:css\" \"npm run dev:hugo\"",
     "dev": "hugo serve",
-    "build": "npm run build:css && hugo --gc --minify"
+    "build": "npm run build:css && hugo --gc --minify",
+    "netlify-build": "npm i -g postcss-cli && npm run build"
   },
   "repository": {
     "type": "git",
