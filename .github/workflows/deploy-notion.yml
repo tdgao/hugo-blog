@@ -13,7 +13,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - run: git rm content/*
-      - run: touch content/.gitkeep
+      - run: mkdir content
       - run: npm ci && npx motionlink ${{ secrets.MOTION_LINK_VARS }}
       - run: |
           git config --global user.name 'Truman'
