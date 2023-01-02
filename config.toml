@@ -2,3 +2,17 @@ baseURL = 'https://polite-dragon-48bbbd.netlify.app'
 languageCode = 'en-us'
 title = 'My New Hugo Site'
 theme = 'digitalgarden'
+
+[menu]
+[[menu.main]]
+  name = 'Home'
+  url = '/'
+  weight = 1
+[[menu.main]]
+  name = 'Content'
+  params.header = true
+  weight = 2
+[[menu.main]]
+  name = 'Articles'
+  url = '/articles'
+  weight = 3
