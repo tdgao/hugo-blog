@@ -1,5 +1,5 @@
 ---
-title: { { { otherData.titleMarkdown } } }
+title: Test - adding new page 
 date: 2023-01-01T16:15:23-08:00
 draft: false
 ---
@@ -9,4 +9,6 @@ draft: false
 ## testing heading
 
 testing more content
+
+testing more content 2
 

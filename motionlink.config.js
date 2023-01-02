@@ -23,8 +23,12 @@ const rules = [
         page._title = page.data.properties.Name.title[0].plain_text;
 
         // Use page.otherData to pass computed, or any other, data to template files.
-        page.otherData.titleMarkdown = '# ' + ObjectTransformers.transform_all(page.data.properties.Name.title);
+        page.otherData.title = ObjectTransformers.transform_all(page.data.properties.Name.title);
+        page.otherData.titleMarkdown = '# ' + page.otherData.title;
         page.otherData.content = ctx.genMarkdownForBlocks(page.blocks);
+
+        // NOTE - when using variables in page_template.md
+        // syntax must be {{{ variable }}} - i.e. no spaces between brackets
 
         return page;
       },
