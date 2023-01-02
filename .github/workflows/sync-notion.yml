@@ -1,4 +1,4 @@
-name: 'Deploy Notion Pages'
+name: 'Sync Notion Pages'
 
 on:
   push:
@@ -7,7 +7,7 @@ on:
 
 jobs:
   deploy:
-    name: 'Pull from Notion and Push to Repo'
+    name: 'Sync Notion Pages'
     runs-on: ubuntu-latest
 
     steps:
@@ -16,7 +16,7 @@ jobs:
         run: git rm content/* && mkdir content
       - name: Pull Notion pages
         run: npm ci && npx motionlink ${{ secrets.MOTION_LINK_VARS }}
-      - name: Commit changes
+      - name: Push changes
         run: |
           git config --global user.name 'Truman'
           git config --global user.email 'tdgao@users.noreply.github.com'
