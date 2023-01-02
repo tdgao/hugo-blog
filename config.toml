@@ -1,7 +1,8 @@
 baseURL = 'https://polite-dragon-48bbbd.netlify.app'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = "Danielle's Happy Place"
 theme = 'digitalgarden'
+
 
 [menu]
 [[menu.main]]
@@ -16,3 +17,30 @@ theme = 'digitalgarden'
   name = 'Articles'
   url = '/articles'
   weight = 3
+
+
+[[menu.social]]
+  name = 'Twitter'
+  url = 'https://twitter.com'
+  weight = 1
+[[menu.social]]
+  name = 'Instagram'
+  url = 'https://instagram.com'
+  weight = 2
+[[menu.social]]
+  name = 'GitHub'
+  url = 'https://github.com/tdgao/hugo-blog'
+  weight = 4
+[[menu.social]]
+  name = 'RSS'
+  url = '/articles/index.xml'
+  weight = 5
+
+
+# syntax highlight settings
+[markup]
+  [markup.highlight]
+    style = "dracula"
+  [markup.goldmark.renderer]
+    # Enable to include inline HTML
+    unsafe = true

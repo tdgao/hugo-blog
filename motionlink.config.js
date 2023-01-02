@@ -5,7 +5,7 @@ const ObjectTransformers = markdownService.ObjectTransformers;
 const rules = [
   {
     template: 'page_template.md',
-    outDir: './content/articles',
+    outDir: './content',
     uses: {
       database: 'articles',
       fetchBlocks: true,

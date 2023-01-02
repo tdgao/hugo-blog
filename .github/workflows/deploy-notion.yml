@@ -5,17 +5,19 @@ on:
     tags:
       - 'motion-link-*'
 
-# jobs:
-#   deploy:
-#     name: 'Deploy to Netlify'
-#     runs-on: ubuntu-latest
+jobs:
+  deploy:
+    name: 'Deploy to Netlify'
+    runs-on: ubuntu-latest
 
-#     steps:
-#       - uses: actions/checkout@v2
-#       - run: npm ci && npx motionlink ${{ secrets.MOTION_LINK_VARS }}
-#       - uses: jsmrcaga/action-netlify-deploy@v1.6.0
-#         with:
-#           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
-#           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
-#           NETLIFY_DEPLOY_TO_PROD: true
-#           build_directory: "./"
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          rm /content/*.*
+      - run: npm ci && npx motionlink ${{ secrets.MOTION_LINK_VARS }}
+      - name: Commit updates
+        run: |
+          git config --global user.name 'Truman'
+          git config --global user.email 'tdgao@users.noreply.github.com'
+          git commit -am "Sync Notion Pages"
+          git push
