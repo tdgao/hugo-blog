@@ -15,8 +15,7 @@ jobs:
       - run: |
           rm -rf /content/*
       - run: npm ci && npx motionlink ${{ secrets.MOTION_LINK_VARS }}
-      - name: Commit updates
-        run: |
+      - run: |
           git config --global user.name 'Truman'
           git config --global user.email 'tdgao@users.noreply.github.com'
           git commit -am "Sync Notion Pages"
