@@ -12,9 +12,12 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
+      - run: |
+          rm -rf /content/*
       - run: npm ci && npx motionlink ${{ secrets.MOTION_LINK_VARS }}
       - run: |
           git config --global user.name 'Truman'
           git config --global user.email 'tdgao@users.noreply.github.com'
+          git add .
           git commit -am "Sync Notion Pages"
           git push
