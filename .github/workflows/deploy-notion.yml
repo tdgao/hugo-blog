@@ -20,11 +20,6 @@ jobs:
         run: |
           git config --global user.name 'Truman'
           git config --global user.email 'tdgao@users.noreply.github.com'
-          # Check if there are changes to push
-          if [[ -z $(git status --porcelain) ]]; then
-            echo "No changes to push"
-          else
-            git add .
-            git commit -am "Sync Notion Pages"
-            git push origin HEAD:main
-          fi
+          git add .
+          git commit -am "Sync Notion Pages" || echo "No changes to commit"
+          git push origin HEAD:main
