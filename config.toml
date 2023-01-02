@@ -11,7 +11,8 @@ theme = 'digitalgarden'
   weight = 1
 [[menu.main]]
   name = 'Content'
-  params.header = true
+  [menu.main.params]
+    header = true
   weight = 2
 [[menu.main]]
   name = 'Articles'
