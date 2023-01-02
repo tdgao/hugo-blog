@@ -1,7 +1,8 @@
 {
-  "name": "digital-garden-theme",
-  "version": "1.1.0",
-  "description": "Build your own personal Digital Garden effortlessly with this Hugo theme",
+  "name": "hugo-blog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
   "scripts": {
     "dev:css": "NODE_ENV=development ./node_modules/tailwindcss/lib/cli.js -i ./themes/digitalgarden/assets/css/tailwind.css -o ./static/css/main.css -w",
     "build:css": "NODE_ENV=production ./node_modules/tailwindcss/lib/cli.js -i ./themes/digitalgarden/assets/css/tailwind.css -o ./static/css/main.css --minify",
@@ -9,15 +10,23 @@
     "dev": "hugo serve",
     "build": "npm run build:css && hugo --gc --minify"
   },
-  "keywords": [],
-  "author": "Varun A P",
-  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tdgao/hugo-blog.git"
+  },
+  "author": "Truman Gao",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tdgao/hugo-blog/issues"
+  },
+  "homepage": "https://github.com/tdgao/hugo-blog#readme",
   "dependencies": {
     "@tailwindcss/line-clamp": "^0.4.0",
     "@tailwindcss/typography": "^0.5.4",
     "tailwindcss": "^3.1.7"
   },
   "devDependencies": {
+    "motionlink-cli": "^0.5.8",
     "concurrently": "^6.4.0"
   }
 }
