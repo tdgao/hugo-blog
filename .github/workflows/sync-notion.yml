@@ -15,7 +15,7 @@ jobs:
       - name: Remove old files
         run: git rm notionContent/* && mkdir notionContent
       - name: Pull Notion pages
-        run: npm ci && npx motionlink ${{ secrets.MOTION_LINK_VARS }}
+        run: npm ci && npx motionlink ${{ secrets.MOTION_LINK_VARS }} && node structureMarkdown.js
       - name: Push changes
         run: |
           git config --global user.name 'Truman'
