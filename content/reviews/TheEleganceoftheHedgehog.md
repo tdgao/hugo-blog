@@ -1,11 +1,9 @@
 ---
 title: The Elegance of the Hedgehog 
-date: 2023-01-01T16:15:23-08:00
+tg_path: /reviews/
+date: 2020-07-23
 draft: false
 ---
-
-# The Elegance of the Hedgehog
-
 The Elegance of the Hedgehog, a novel translated from the French by author Muriel Barbery, is a wonderfully written, profound and inspirational book that deserves to be much more well-known than it is. It is an extraordinary character study of two kindred souls, yet complete opposites on the social hierarchy—Renee, a 54-year old concierge and Paloma, a precocious 12 year old —-linked only by their intelligence and the affluent Parisian residence they live in. Renee furtively hides her intelligence under a facade of a dull and slow witted stereotype, and Paloma becomes increasingly discouraged by the emptiness of the lives of her wealthy family and those around her. She plots to take her life on her 13th birthday and set fire to her apartment, all the while keeping a journal of things that make life worth living, in hopes that she will find something to give her hope. Both are extensively unhappy with their lives; Renee because she is disdained by the rich who encourage her belief in a world of haves and have-nots, and Paloma because she hates her family, those that perpetuate and flaunt this very belief. But this all changes with the arrival of Ozu, a wealthy Japanese man who places class and outward appearances aside in favour of recognizing Renee’s true self, and befriending Paloma.
 
 Ozu is Barbery’s vehicle for her beliefs and admiration of Japanese aesthetics, that she compares to French aesthetics, criticizing the latter for being too pretentious and old-fashioned. As a professor of philosophy, the novel is a way for Barbery to illustrate her own thoughts about the philosophy surrounding the nature of art, beauty and taste. The novel is rife with motifs of Japanese art and culture that are used to portray the main theme of the novel: that the greatest beauty is subtle, humble and modest, found within the inconspicuous. Some of the most important motifs, I outline as following:
@@ -67,4 +65,3 @@ It is implied that Ozu develops romantic feelings for Renee when he says “we c
 Leonard Koren, an American aesthetics writer, says: “By analogy, if you fall in love with someone or something—say a physically unattractive person, place, or thing—thereafter you will perceive this someone or something as beautiful (at least some of the time), even if the rest of the world doesn’t.”
 
 The ending of the novel, though bittersweet, is a perfect encapsulation of Renee and Paloma’s character arcs. Perhaps after all that, Barbery still manages to ground the reader in realism: that although Renee is ready to love Ozu, there are too many obstacles in the way. I deeply appreciate the ending, as realistic as it is, it remains hopeful. It quite poetically gives Paloma a reason to live, and a reason to exalt the quiet but formidable victories of the inconspicuous; a way to see the elegance of the hedgehog.
-

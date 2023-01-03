@@ -1,6 +1,6 @@
 ---
 title: Introduction 
-slug: /misc/
+tg_path: /misc/
 date: 2013-12-02
 draft: false
 ---

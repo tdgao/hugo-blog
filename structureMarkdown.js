@@ -1,29 +1,21 @@
 // @ts-check
 // using https://stackoverflow.com/questions/62586022/node-js-how-to-read-write-a-markdown-file-changing-its-front-matter-metadata
 
-const { readdir, readFile, unlink } = require("fs/promises");
 const matter = require("gray-matter");
-const { stringify } = require("yaml");
-const { rename } = require("node:fs");
-const path = require("path");
+const { readdir, readFile } = require("fs/promises");
+const { rename, mkdirSync } = require("node:fs");
+const fsExtra = require('fs-extra');
 
 const directory = "notionContent";
 
 async function removePreviousFiles() {
   // using https://stackoverflow.com/questions/27072866/how-to-remove-all-files-from-directory-without-removing-directory-in-node-js
-  // 
-  let dir = "content/fiction";
-  for (const file of await readdir(dir)) {
-    await unlink(path.join(dir, file));
-  }
-  dir = "content/reviews";
-  for (const file of await readdir(dir)) {
-    await unlink(path.join(dir, file));
-  }
-  dir = "content/misc";
-  for (const file of await readdir(dir)) {
-    await unlink(path.join(dir, file));
-  }
+  fsExtra.emptyDirSync("content");
+  // make directories
+  // using https://stackoverflow.com/questions/13696148/node-js-create-folder-or-use-existing
+  mkdirSync("content/reviews", { recursive: true })
+  mkdirSync("content/fiction", { recursive: true })
+  mkdirSync("content/misc", { recursive: true })
 }
 
 async function renameFiles(filename) {

@@ -1,11 +1,9 @@
 ---
-title: **Call Me By Your Name** 
-date: 2023-01-01T16:15:23-08:00
+title:  Call Me By Your Name  
+tg_path: /reviews/
+date: 2020-05-29
 draft: false
 ---
-
-# **Call Me By Your Name**
-
 “We rip out so much of ourselves to be cured of things faster than we should that we go bankrupt by the age of thirty and have less to offer each time we start with someone new. But to feel nothing so as not to feel anything – what a waste.”
 
 Warning: this review contains spoilers. However, this is the kind of novel with an experience unaffected by spoilers.
@@ -27,4 +25,3 @@ After Oliver gets married, Elio continues to reflect on the impact of Oliver on 
 Perhaps the only criticism I feel pertinent to share here is the excessive sexual explicitness of the novel, which in my opinion, detracts from its important themes. Readers may be put-off by this.
 
 About the film adaptation: the film’s ending differs from the novel in that Elio receives a phone call during winter about Oliver’s engagement and marriage. The film ends with Elio sitting down in front of the fireplace, tears in his eyes. In the final moments, Elio’s mother calls him and he turns to look at her over his shoulder. I did not expect this ending, and do favour the novel’s ending, but I am impressed by its ability to capture the same themes. The wintery landscape reminds us of the brevity of summer, the changing seasons and the inevitable distance between Elio and Oliver. Elio looking over his shoulder represents the same battered hope present in the novel, reminding us that he will eventually move on. Timothee Chalamet’s performance, with his truly heart-wrenching expression, beautifully captures the sadness of what could have been. The soundtrack by Sufjan Stevens is a masterpiece that serves as the perfect accompaniment to the film. I enjoyed the film thoroughly as a wonderful adaptation directed by Luca Guadagnino. (Don’t forget to look for a version with subtitles to the Italian and French. That was my mistake, but I’m probably going to watch it again anyway.)
-

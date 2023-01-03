@@ -1,6 +1,6 @@
 ---
-title: Prompt  Spring - April 
-slug: /fiction/
+title: Prompt Spring - April 
+tg_path: /fiction/
 date: 2014-06-18
 draft: false
 ---

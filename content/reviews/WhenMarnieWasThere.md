@@ -1,6 +1,6 @@
 ---
 title: When Marnie Was There 
-slug: /reviews/
+tg_path: /reviews/
 date: 2020-07-16
 draft: false
 ---
