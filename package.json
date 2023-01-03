@@ -8,8 +8,8 @@
     "build:css": "NODE_ENV=production ./node_modules/tailwindcss/lib/cli.js -i ./themes/digitalgarden/assets/css/tailwind.css -o ./static/css/main.css --minify",
     "develop": "concurrently  \"npm run dev:css\" \"npm run dev:hugo\"",
     "dev": "hugo serve",
-    "build": "npm run build:css && hugo --gc --minify",
-    "netlify-build": "npm i -g postcss-cli && npm run build"
+    "build": "node structureMarkdown.js && hugo --gc --minify",
+    "fetch-notion": "npx motionlink articles=cbdb32b3eae641419104bd80f1e9d906 && node structureMarkdown.js"
   },
   "repository": {
     "type": "git",
@@ -24,10 +24,11 @@
   "dependencies": {
     "@tailwindcss/line-clamp": "^0.4.0",
     "@tailwindcss/typography": "^0.5.4",
+    "gray-matter": "^4.0.3",
     "tailwindcss": "^3.1.7"
   },
   "devDependencies": {
-    "motionlink-cli": "^0.5.8",
-    "concurrently": "^6.4.0"
+    "concurrently": "^6.4.0",
+    "motionlink-cli": "^0.5.8"
   }
 }

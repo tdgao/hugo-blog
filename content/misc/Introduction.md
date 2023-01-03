@@ -1,11 +1,9 @@
 ---
 title: Introduction 
-date: 2023-01-01T16:15:23-08:00
+slug: /misc/
+date: 2013-12-02
 draft: false
 ---
-
-# Introduction
-
 ***Welcome!***
 
 This is a place for writers.  I am pleased to say I've discovered creative writing a handful of years ago, and never looked back.  There are no expectations, no rules, no pressure.  Because everything falls away and finally, I can be *me*, completely, fully---free.  
@@ -45,4 +43,3 @@ My writing style concentrates on feeling, not description.  I use many commas, 
 I'm looking forward to sharing with you.  Still a beginner, I hope to improve in many ways.
 
 Into the happy place of writing we go!
-

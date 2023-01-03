@@ -13,7 +13,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Remove old files
-        run: git rm content/* && mkdir content
+        run: git rm notionContent/* && mkdir notionContent
       - name: Pull Notion pages
         run: npm ci && npx motionlink ${{ secrets.MOTION_LINK_VARS }}
       - name: Push changes
