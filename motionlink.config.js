@@ -17,7 +17,8 @@ const rules = [
         // NOTE - when using variables in page_template.md
         // syntax must be {{{ variable }}} - i.e. no spaces between brackets
         /** todo
-         *
+         * add prop for read time,
+         * set disable formatting on markdown files
          */
         const properties = page.data.properties;
 
@@ -26,17 +27,17 @@ const rules = [
           ObjectTransformers.transform_all(properties["Name"].title)
         );
         const content = ctx.genMarkdownForBlocks(page.blocks);
-        const date = properties["Date"].date.start;
+        const date = properties["Date"].date.start || page.data.created_time;
 
         const category = properties["Category"].select.name;
-        const slug =
+        const tg_path =
           category === "Fiction"
             ? "/fiction/"
             : category === "Reviews"
             ? "/reviews/"
-            : "/misc/"; 
+            : "/misc/";
 
-        console.log(properties);
+        console.log(page);
         // Use page.otherData to pass computed, or any other, data to template files.
         return {
           ...page,
@@ -44,7 +45,7 @@ const rules = [
           otherData: {
             title: title,
             content: content,
-            slug: slug,
+            tg_path: tg_path,
             date: date,
           },
         };

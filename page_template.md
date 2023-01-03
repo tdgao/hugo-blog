@@ -1,6 +1,6 @@
 ---
 title: {{{ otherData.title }}} 
-slug: {{{ otherData.slug }}}
+tg_path: {{{ otherData.tg_path }}}
 date: {{{ otherData.date }}}
 draft: false
 ---

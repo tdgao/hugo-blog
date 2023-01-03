@@ -29,8 +29,8 @@ async function removePreviousFiles() {
 async function renameFiles(filename) {
   const filepath = `${directory}/${filename}`;
   const { data: frontMatter } = matter(await readFile(filepath));
-  const slug = frontMatter.slug || "/misc/"
-  const newPath = "content" + slug + filename;
+  const tg_path = frontMatter.tg_path || "/misc/"
+  const newPath = "content" + tg_path + filename;
 
   rename(filepath, newPath, (err) => {
     if (err) throw err;
