@@ -2,14 +2,18 @@ const markdownService = require("motionlink-cli/lib/services/markdown_service");
 const ObjectTransformers = markdownService.ObjectTransformers;
 
 function validFilename(s) {
-  let result = s.replace(/[\/|\\:*?"<>]/g, " ").trim().toLowerCase(); // removing all invalid characters
-  result = result.replace(/\s/g, '-'); // set spacing to dash
-  result = result.replace(/-{2,}/g, '-'); // maximum one continuous dash
+  let result = s.replace(/[\/|\\:*?"<>]/g, " ").trim(); // removing all invalid characters
+  return result;
+}
+function convertFilename(s) {
+  let result = validFilename(s).toLowerCase();
+  result = result.replace(/\s/g, "-"); // set spacing to dash
+  result = result.replace(/-{2,}/g, "-"); // maximum one continuous dash
   return result;
 }
 function validTitle(s) {
-  let result = s.replace(/[\/|\\:*?"<>]/g, " "); // removing all invalid characters
-  result = result.replace(/\s{2,}/g, ' ').trim(); // remove double and outer spacing
+  let result = s.replace(/[\/|\\:*?"<>]/g, " ").trim(); // removing all invalid characters
+  result = result.replace(/\s{2,}/g, " "); // remove double and outer spacing
   return result;
 }
 
@@ -22,23 +26,18 @@ const rules = [
       database: "articles",
       fetchBlocks: true,
       map: (page, ctx) => {
-        // NOTE - when using variables in page_template.md
-        // syntax for page_template.md must be {{{ variable }}} - i.e. no spaces between brackets
+        // page_template.md used for Notion pages to .md
+        // variables in page_template.md must be {{{ variable }}} - i.e. no spaces between brackets
 
-        /** todo
-         * home page should show all's top 3 and have see more button
-         * do work on single's
-         *    add in the header nav bar
-         *    remove all of the hamberger 
-         *    keep scroll to top button
-         *    have a share button on the bottom of the page
-         * fix article titlesred underline to be yellow
-         * vs code - set disable formatting on markdown files
-         * add filename prop in notion - connect here
-         */
         const properties = page.data.properties;
 
-        const filename = validFilename(properties["Name"].title[0].plain_text);
+        const definedFilename =
+          properties["Filename"]?.rich_text[0]?.plain_text;
+        const inferredFilename = properties["Name"].title[0].plain_text;
+        const filename = definedFilename
+          ? validFilename(definedFilename)
+          : convertFilename(inferredFilename);
+
         const title = validTitle(
           ObjectTransformers.transform_all(properties["Name"].title)
         );
