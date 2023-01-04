@@ -8,7 +8,7 @@
     "build:css": "NODE_ENV=production ./node_modules/tailwindcss/lib/cli.js -i ./themes/digitalgarden/assets/css/tailwind.css -o ./static/css/main.css --minify",
     "develop": "concurrently  \"npm run dev:css\" \"npm run dev:hugo\"",
     "dev": "hugo serve",
-    "build": "node structureMarkdown.js && hugo --gc --minify",
+    "build": "hugo --gc --minify",
     "fetch-notion": "npx motionlink articles=cbdb32b3eae641419104bd80f1e9d906 && node structureMarkdown.js"
   },
   "repository": {
