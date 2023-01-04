@@ -2,8 +2,9 @@ const markdownService = require("motionlink-cli/lib/services/markdown_service");
 const ObjectTransformers = markdownService.ObjectTransformers;
 
 function validFilename(s) {
-  let result = s.replace(/[\/|\\:*?"<>]/g, " "); // removing all invalid characters
-  result = result.replace(/\s/g, ''); // remove all spacing
+  let result = s.replace(/[\/|\\:*?"<>]/g, " ").trim().toLowerCase(); // removing all invalid characters
+  result = result.replace(/\s/g, '-'); // set spacing to dash
+  result = result.replace(/-{2,}/g, '-'); // maximum one continuous dash
   return result;
 }
 function validTitle(s) {
