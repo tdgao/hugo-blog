@@ -33,6 +33,7 @@ const rules = [
          *    have a share button on the bottom of the page
          * fix article titlesred underline to be yellow
          * vs code - set disable formatting on markdown files
+         * add filename prop in notion - connect here
          */
         const properties = page.data.properties;
 

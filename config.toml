@@ -1,6 +1,6 @@
 baseURL = 'https://polite-dragon-48bbbd.netlify.app'
 languageCode = 'en-us'
-title = "Dani's Scribble Spot"
+title = "Dani's Word Garden"
 theme = "cactus"
 # copyright = "You" # cactus will use title if copyright is not set
 # disqusShortname = "example" # Used when comments is enabled. Cactus will use site title if not set
