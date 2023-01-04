@@ -49,6 +49,7 @@ weight = 4
 
 [params]
 
+  css = ["css/custom.css"]
   colortheme = "white" # dark, light, white, or classic
   rss = true # generate rss feed. default value is false
   googleAnalyticsAsync = true # use asynchronous tracking. Synchronous tracking by default
@@ -56,12 +57,11 @@ weight = 4
 
   # Home page settings
   description = "Welcome! I'm Danielle, a writer who discovered my passion for creative writing a few years ago and haven't looked back since. Here, there are no expectations or rules - just a place to be myself and freely express my creativity. "
-  mainSection = "reviews" # your main section
+  mainSection = "reviews" 
   mainSectionTitle = "Reviews"
-  showAllPostsOnHomePage = true # default
-  postsOnHomePage = 3 # this option will be ignored if showAllPostsOnHomePage is set to true
-  tagsOverview = false # show tags overview by default.
-  showProjectsList = false # show projects list by default (if projects data file exists).
+  postsOnHomePage = 4 # this option will be ignored if showAllPostsOnHomePage is set to true
+  tagsOverview = false 
+  showProjectsList = false 
 
   # https://gohugo.io/functions/format/#hugo-date-and-time-templating-reference
   dateFormat = "2006-01-02" # default
@@ -72,12 +72,3 @@ weight = 4
 
   # the value of name should be an valid font awesome icon name (brands type)
   # https://fontawesome.com/icons?d=gallery&s=brands
-  [[params.social]]
-    name = "github"
-    link = "https://github.com/gohugoio"
-  [[params.social]]
-    name = "linkedin"
-    link = "https://www.linkedin.com/company/github/"
-  [[params.social]]
-    name = "email"
-    link = "example@example.com"  # no need for "mailto:" in the head

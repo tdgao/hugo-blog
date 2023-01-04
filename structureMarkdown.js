@@ -11,7 +11,8 @@ const directory = "notionContent";
 async function removePreviousFiles() {
   // using https://stackoverflow.com/questions/27072866/how-to-remove-all-files-from-directory-without-removing-directory-in-node-js
   fsExtra.emptyDirSync("content");
-  // make directories
+
+  // Make directories - hardcoded
   // using https://stackoverflow.com/questions/13696148/node-js-create-folder-or-use-existing
   mkdirSync("content/reviews", { recursive: true })
   mkdirSync("content/fiction", { recursive: true })
@@ -26,12 +27,12 @@ async function renameFiles(filename) {
 
   rename(filepath, newPath, (err) => {
     if (err) throw err;
-    console.log("Rename complete!");
+    console.log(`Rename complete! ${filepath} -> ${newPath}`);
   });
 }
 
 async function main() {
-  console.log("running");
+  console.log("Starting structureMarkdown.js");
   await removePreviousFiles();
 
   const filenames = await readdir(directory);

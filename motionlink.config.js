@@ -26,8 +26,11 @@ const rules = [
 
         /** todo
          * home page should show all's top 3 and have see more button
-         * have a share button on the bottom of the page
          * do work on single's
+         *    add in the header nav bar
+         *    remove all of the hamberger 
+         *    keep scroll to top button
+         *    have a share button on the bottom of the page
          * fix article titlesred underline to be yellow
          * vs code - set disable formatting on markdown files
          */
