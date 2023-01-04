@@ -1,5 +1,5 @@
 ---
-title:  Call Me By Your Name  
+title: Call Me By Your Name 
 tg_path: /reviews/
 date: 2020-05-29
 draft: false

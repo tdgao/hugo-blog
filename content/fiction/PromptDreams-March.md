@@ -1,5 +1,5 @@
 ---
-title:  Prompt Dreams - March  
+title: Prompt Dreams - March 
 tg_path: /fiction/
 date: 2014-06-18
 draft: false

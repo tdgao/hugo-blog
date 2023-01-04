@@ -1,5 +1,5 @@
 ---
-title:  Entering a New Environment Story - Coldness  
+title: Entering a New Environment Story - Coldness 
 tg_path: /fiction/
 date: 2014-06-24
 draft: false
