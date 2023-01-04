@@ -1,5 +1,5 @@
 ---
-title:  Prompt Innocence - March  
+title: Prompt Innocence - March 
 tg_path: /fiction/
 date: 2014-06-23
 draft: false

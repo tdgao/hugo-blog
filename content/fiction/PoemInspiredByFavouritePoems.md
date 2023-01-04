@@ -1,5 +1,5 @@
 ---
-title:  Poem Inspired By Favourite Poems  
+title: Poem Inspired By Favourite Poems 
 tg_path: /fiction/
 date: 2014-06-18
 draft: false

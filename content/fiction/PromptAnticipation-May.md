@@ -1,5 +1,5 @@
 ---
-title:  Prompt Anticipation - May  
+title: Prompt Anticipation - May 
 tg_path: /fiction/
 date: 2014-06-18
 draft: false

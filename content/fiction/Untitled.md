@@ -1,5 +1,5 @@
 ---
-title:  Untitled  
+title: Untitled 
 tg_path: /fiction/
 date: 2016-04-16
 draft: false
