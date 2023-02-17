@@ -1,6 +1,6 @@
 # Hugo + Notion Static Blog Website
 
-A simple blogging website created with [Hugo](https://gohugo.io) as the static site generator and [Notion](https://www.notion.so/product) acting as the CMS. Gluing the two together is [MotionLink](https://motionlink.lytowl.com). TODO - use netlify to deploy
+A simple blogging website created with [Hugo](https://gohugo.io) as the static site generator and [Notion](https://www.notion.so/product) acting as the CMS. Gluing the two together is [MotionLink](https://motionlink.lytowl.com). Website is deployed on Netlify.
 
 ## Development
 
